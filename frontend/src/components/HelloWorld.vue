@@ -31,10 +31,24 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods:{
+    search: function(){
+      axios.post('/api/student',{
+        id: 'asdfa'
+      }).then((res) => {
+        console.log(res)
+      })
+    },
+    print: function(){
+      
+    }
   }
 }
 </script>

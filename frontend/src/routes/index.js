@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import helloworld from '@/components/HelloWorld.vue';
+import mainpage from '../main.vue';
 
 Vue.use(Router)
 
@@ -9,8 +9,8 @@ export const router = new Router({
     routes: [
         {
             path: '/',
-            name: 'helloworld',
-            component: helloworld
+            name: 'mainpage',
+            component: mainpage
         }
     ]
 })

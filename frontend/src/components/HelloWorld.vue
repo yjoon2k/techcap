@@ -41,7 +41,7 @@ export default {
   methods:{
     search: function(){
       axios.post('/api/student',{
-        id: 'asdfa'
+        id: 'app'
       }).then((res) => {
         console.log(res)
       })

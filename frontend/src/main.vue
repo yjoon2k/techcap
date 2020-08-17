@@ -7,8 +7,9 @@
          <div id="t1">
             <a href = "/mypage">
               <img id="emo1" src="@/assets/emo.png">
+              <p id="mypage">마이페이지</p>
             </a>
-            <p id="mypage">마이페이지</p>
+            
          </div>
 
          <div id="t2">

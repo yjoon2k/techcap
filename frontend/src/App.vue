@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <p1>fsdafdsa</p1>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App1'
+  name: 'app'
 }
 </script>
 

@@ -3,14 +3,10 @@ var router = express.Router();
 var User = require('../models/user');
 
 /* GET home page. */
-router.get('/',function(req,res,next){
-  User.find({where:{id:1}})
-  .then((user)=>{
+router.get('/', function(req, res, next) {
   res.render('index',{
-      title:'Express',
-      useremail: user.useremail});
+    title:'Express'
   });
 });
 
-console.log(useremail);
 module.exports = router;

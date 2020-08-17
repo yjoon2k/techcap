@@ -1,9 +1,13 @@
 <template>
     <div id = "app">
       <div id="top">
-         <router-link to="/"><img id="logo" width=300px height=300px src='@/assets/logo.png'/></router-link>
+        <a href="/">
+          <img id="logo" width=300px height=300px src='@/assets/logo.png'>
+        </a>
          <div id="t1">
-            <router-link to="/"><img id="emo1" src='@/assets/emo.png'/></router-link>
+            <a href = "/mypage">
+              <img id="emo1" src="@/assets/emo.png">
+            </a>
             <p id="mypage">마이페이지</p>
          </div>
 
@@ -17,18 +21,7 @@
     </div>
 </template>
 
-<script>
-export default {
-  name: 'app', 
-  
-}
-</script>
 <style>
-  #link{
-    position: absolute;
-    left:200px;
-    top: 400px;
-  }
   #mypage{
     position: absolute;
     right: 70px;
@@ -43,6 +36,7 @@ export default {
   #logo{
     position: absolute;
     left: 0px;
+    top: 0px;
   }
   .bt{
     background-color: #82CBC4;

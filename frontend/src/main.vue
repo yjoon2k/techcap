@@ -13,8 +13,8 @@
          </div>
 
          <div id="t2">
-          <button class="bt" id= "bt1">교봉 단체 정보</button>
-          <button class="bt" id= "bt2">선생님</button>
+          <button class="bt" id="bt1">교봉 단체 정보</button>
+          <button class="bt" id="bt2">선생님</button>
           <button class="bt" id="bt3">학생</button>
           <button class="bt" id="bt4">공지사항</button>
          </div>

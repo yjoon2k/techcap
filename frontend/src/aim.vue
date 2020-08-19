@@ -38,71 +38,61 @@
               </div>
           </div>
       </div>
-        <div id="body">
-            <button id="home" class="btn">홈</button>
-            <button id="inform" class="btn">내 정보 변경</button>
-            <button id="secure" class="btn">보안</button>
-            <button id="class" class="btn">내 수업</button>
-            <button id="student" class="btn">내 학생</button>
-            <button id="teacher" class="btn">내 선생님</button>
-            <button id="home" class="btn">홈</button>
-            <button id="inform" class="btn">내 정보 변경</button>
-            <button id="secure" class="btn">보안</button>
-            <button id="class" class="btn">내 수업</button>
-            <button id="student" class="btn">내 학생</button>
-            <button id="teacher" class="btn">내 선생님</button>
-            <a href="/aim">
-                <h1 id="mp">마이페이지</h1>
-            </a>
-            <img id="image" src="@/assets/image.png">
-           
-        </div>
+      <div id="body">       
+        <a href="/aim">
+            <button id="aim" class="button">설립 목적</button>
+        </a>   
+        <a href="/select"> 
+            <button id="select" class="button">선정 기준</button>
+        </a>
+        <h1 id="word">설립 목적</h1>
 
+      </div>
     </div>
 </template>
-
 <script>
-    
+export default {
+   
+   methods:{
+
+      greet: function(){
+        var t3 = document.getElementById("t3");
+        t3.style.visibility = "visible";
+      }, 
+      out: function(){
+        var t3 = document.getElementById("t3");
+        t3.style.visibility = "hidden";
+      }
+    },
+    mounted(){
+        var btn = document.getElementById('bt1')
+        btn.style.backgroundColor = "#82CBC4"
+        btn.style.color="white"
+        var aim=document.getElementById('aim')
+        aim.style.backgroundColor="#FECCBE"
+    }
+}
+
 </script>
-<style> 
-    #mp{
-        font-size: 50px;
+
+<style>
+    #word{
         position: absolute;
-        left: 800px;
-        top: 500px;
-        color: black;
+        left: 1000px;
+        top: 250px;
     }
-    #image{
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        left: 818px;
-        top: 200px;
-    }
-    .btn{
+    .button{
         width: 200px;
         height: 50px;
         position: absolute;
-        left: 50px;
+        left: 300px;
         background-color: white;
         font-size: 20px;
     }
-    #home{
-        top:250px;
+    #aim{
+        top: 250px;
     }
-    #inform{
+    #select{
         top: 300px;
-    }
-    #secure{
-        top: 350px;
-    }
-    #class{
-        top: 400px;
-    }
-    #student{
-        top: 450px;
-    }
-    #teacher{
-        top: 500px;
     }
 </style>

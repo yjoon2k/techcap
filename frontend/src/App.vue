@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-        <a href="/">
-          <img id="logo" width=300px height=300px src='@/assets/logo.png'>
-        </a>
+        
     <router-view></router-view>
   </div>
 </template>
@@ -16,8 +14,8 @@ export default {
 <style>
 #logo{
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 25%;
+    top: 58px;
   }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

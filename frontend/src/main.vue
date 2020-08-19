@@ -9,10 +9,29 @@
           </div>
 
           <div id="t2">
-              <button v-on:click="main" class="bt" id="bt1">교봉 단체 정보</button>
-              <button class="bt" id="bt2">선생님</button>
-              <button class="bt" id="bt3">학생</button>
-              <button class="bt" id="bt4">공지사항</button>
+            <button v-on:click="greet" class="bt" id="bt1">교봉 단체 정보</button>
+            <button v-on:click="greet" class="bt" id="bt2">선생님</button>
+            <button v-on:click="greet" class="bt" id="bt3">학생</button>
+            <button v-on:click="greet" class="bt" id="bt4">공지사항</button>
+          </div>
+
+          <div id ="t3">
+            <ul class="li1" id="bt_kyobong">
+              <li>설립목적</li>
+              <li>선정기준</li>
+            </ul>
+            <ul class="li1" id="bt_teacher">
+              <li>학생 매칭하기</li>
+              <li>학생 신청 리스트</li>
+            </ul>
+            <ul class="li1" id="bt_student">
+              <li>선생님 신청 리스트</li>
+            </ul>
+            <ul class="li1" id="bt_notice">
+              <li>공지사항</li>
+              <li>우수사례</li>
+              <li>첨부파일</li>
+            </ul>
           </div>
       </div>
 
@@ -38,19 +57,17 @@
     </div>
 </template>
 
-<srcipt>
-export default {
-  name: 'main',
-  props: {
-    msg: String
-  },
-  methods:{
-    main: function(){
-      this.$router.replace(this.$)
+<script>
+  export default {
+    methods:{
+      greet: function(){
+        var t3 = document.getElementById("t3");
+        t3.style.visibility = "visible";
+      }
     }
   }
-}
-</srcipt>
+</script>
+
 
 <style>
   #mypage{
@@ -93,13 +110,38 @@ export default {
     height: 500px; 
   }
   .li{
-    background-color: #52575d;
+    background-color: #96D3E0;
     width: 29%;
     height: 300px;
     font-size: 30px;
     color: white;
     position: absolute;
     top:730px;
+  }
+  #t3{
+    visibility: hidden; 
+  }
+  .li1{
+    background-color: #96D3E0;
+    width: 17.2%;
+    height: 100px;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top:180px;
+    z-index: 1;
+  }
+  #bt_kyobong{
+    left: 20%;
+  }
+  #bt_teacher{
+    left: 40%;
+  }
+  #bt_student{
+    left: 60%;
+  }
+  #bt_notice{
+    left: 80%;
   }
   #notice{
     left:10px;

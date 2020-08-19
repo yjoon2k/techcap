@@ -17,6 +17,6 @@ export const router = new Router({
             path: '/mypage',
             name: 'mypage',
             component: mypage
-        }
+        },
     ]
 })

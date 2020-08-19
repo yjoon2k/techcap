@@ -1,6 +1,6 @@
 <template>
-    <div id = "app">
-      <div id="top">
+    <div>
+        <div id="top">
       <a href="/">
           <img id="logo" width=150px height=150px src='@/assets/logo.png'>
         </a>
@@ -38,32 +38,21 @@
               </div>
           </div>
       </div>
+      <div id="body">       
+        <a href="/match">
+            <button id="match" class="button">학생 매칭하기</button>
+        </a>   
+        <a href="/studentApply"> 
+            <button id="studentApply" class="button">학생 신청 리스트</button>
+        </a>
 
-      <div id="body">
-        <div id="b1">
-          <img id="intro" src="@/assets/intro.png">
-        </div>
-      </div>
-
-      <div id="bottom">
-        <div id="bot1">
-          <ol class="li" id="notice">
-            <li>fdsa</li>
-          </ol>
-          <ol class="li" id="beststudy">
-            <li>aaa</li>
-          </ol>
-          <ol class="li" id="references">
-            <li>bbbb</li>
-          </ol>
-        </div>
       </div>
     </div>
 </template>
-
 <script>
-  export default {
-    methods:{
+export default {
+   
+   methods:{
 
       greet: function(){
         var t3 = document.getElementById("t3");
@@ -73,103 +62,19 @@
         var t3 = document.getElementById("t3");
         t3.style.visibility = "hidden";
       }
+    },
+    mounted(){
+        var btn = document.getElementById('bt2')
+        btn.style.backgroundColor = "#82CBC4"
+        btn.style.color="white"
+        var studentApply=document.getElementById('studentApply')
+        studentApply.style.backgroundColor="#FECCBE"
     }
-  }
+}
+
 </script>
 
-
 <style>
-  a:link { color: white; text-decoration: none;}
-  a:visited { color: white; text-decoration: none;}
-  a:hover { color: white; text-decoration: none;}
-  #mypage{
-    position: absolute;
-    right: 70px;
-    top: 8px;
-    font-size: 25px;
-    color: black;
-  }
-  #emo1{
-    position: absolute;
-    right: 200px;
-    top: 30px;
-  }
-  .bt{
-    background-color: white;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    color: black;
-    position: absolute;
-    top:100px;
-
     
-  }
-  #bt1{
-    left: 35%;
-  }
-  #bt2{
-    left: 45%;
-  }
-  #bt3{
-    left: 55%;
-  }
-  #bt4{
-    left: 65%;
-  }
-  #intro{
-    left: 10px;
-    position: absolute;
-    top: 230px;
-    width: 99%;
-    height: 500px; 
-  }
-  .li{
-    background-color: #96D3E0;
-    width: 29%;
-    height: 300px;
-    font-size: 30px;
-    color: white;
-    position: absolute;
-    top:730px;
-  }
-  #t3{
-    visibility: hidden; 
-   
-  }
-  .li1{
-    margin: 0 auto;
-    background-color: skyblue;
-    width: 200px;
-    height: 80px;
-    font-size: 20px;
-    text-align: center;
-    position: absolute;
-    top:150px;
-    border-left:2px solid white;
     
-  }
-  #bt_kyobong{
-    left: 35%;
-  }
-  #bt_teacher{
-    left: 45%;
-  }
-  #bt_student{
-    left: 55%;
-  }
-  #bt_notice{
-    left: 65%;
-  }
-  #notice{
-    left:10px;
-  }
-  #beststudy{
-    left:34.3%;
-  }
-  #references{
-    left:68%;
-  }
 </style>
-
-  
